@@ -1,9 +1,11 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import './App.css';
+import Chatbot6 from './Demo';
+function App() {
+  return (
+    <div className="App">
+      <Chatbot6/>
+    </div>
+  );
+}
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+export default App;
